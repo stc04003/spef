@@ -1,14 +1,8 @@
-[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
+**spef**
+--------
 
-------------------------------------------------------------------------
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active) [![minimal R version](https://img.shields.io/badge/R%3E%3D-3.4.4-6666ff.svg)](https://cran.r-project.org/) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/spef)](https://cran.r-project.org/package=spef) [![packageversion](https://img.shields.io/badge/Package%20version-1.0.8-orange.svg?style=flat-square)](commits/master) [![Last-changedate](https://img.shields.io/badge/last%20change-2018--06--07-yellowgreen.svg)](/commits/master) ----
 
-[![minimal R version](https://img.shields.io/badge/R%3E%3D-3.4.4-6666ff.svg)](https://cran.r-project.org/) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/spef)](https://cran.r-project.org/package=spef) [![packageversion](https://img.shields.io/badge/Package%20version-1.0.8-orange.svg?style=flat-square)](commits/master)
-
-------------------------------------------------------------------------
-
-[![Last-changedate](https://img.shields.io/badge/last%20change-2018--05--31-yellowgreen.svg)](/commits/master)
-
-<!-- README.md is generated from README.Rmd. Please edit that file -->
 Estimating procedures include: Wang-Yan’s augmented estimating equations (AEE, AEEX), HuangWang-Zhang’s method (HWZ), Zhang’s maximum pseudolikelihood (MPL), Maximum pseudolikelihood with I-Splines (MPLs), Maximum likelihood with I-Splines (MLs), and Sun-Wei’s method (SWa, SWb, SWc).
 
 #### Installation
