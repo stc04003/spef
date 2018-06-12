@@ -28,11 +28,18 @@ and Sun-Wei’s method (SWa, SWb, SWc).
 
 #### Installation
 
-Install and load R/spef from CRAN using
+You can install spef from CRAN using
 
 ```r
 install.packages("spef")
 library(spef)
+```
+
+You can install spef from github with:
+
+```{r gh-installation, eval = FALSE}
+## install.packages("devtools")
+devtools::install_github("stc04003/spef")
 ```
 
 #### Reference
