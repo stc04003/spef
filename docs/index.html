@@ -74,27 +74,28 @@
 <a href="#spef" class="anchor"></a><strong>spef</strong>
 </h2>
 <p><a href="http://www.repostatus.org/#active"><img src="http://www.repostatus.org/badges/latest/active.svg" alt="Project Status: Active – The project has reached a stable, usable state and is being actively developed."></a> <a href="https://cran.r-project.org/"><img src="https://img.shields.io/badge/R%3E%3D-3.4.4-6666ff.svg" alt="minimal R version"></a> <a href="https://cran.r-project.org/package=spef"><img src="http://www.r-pkg.org/badges/version/spef" alt="CRAN_Status_Badge"></a> <a href="commits/master"><img src="https://img.shields.io/badge/Package%20version-1.0.8-orange.svg?style=flat-square" alt="packageversion"></a> <a href="/commits/master"><img src="https://img.shields.io/badge/last%20change-2018--07--31-yellowgreen.svg" alt="Last-changedate"></a> —-</p>
-<p>Estimating procedures include: Wang-Yan’s augmented estimating equations (AEE, AEEX), HuangWang-Zhang’s method (HWZ), Zhang’s maximum pseudolikelihood (MPL), Maximum pseudolikelihood with I-Splines (MPLs), Maximum likelihood with I-Splines (MLs), and Sun-Wei’s method (SWa, SWb, SWc).</p>
+<p>Panel count data arise in many applications when the event history of a recurrent event process is only examined at a sequence of discrete time points. Methods in panel count data implemented in this package are grouped into two categories depending on whether the examination times are associated with the recurrent event process after conditioning on covariates. Estimating procedures include: Wang-Yan’s augmented estimating equations (<code>AEE</code>, <code>AEEX</code>), HuangWang-Zhang’s method (<code>HWZ</code>), Zhang’s maximum pseudolikelihood (<code>MPL</code>), Maximum pseudolikelihood with I-Splines (<code>MPLs</code>), Maximum likelihood with I-Splines (<code>MLs</code>), Sun-Wei’s method (<code>EE.SWa</code>, <code>EE.SWb</code>, <code>EE.SWc</code>), Hu-Sun-Wei’s method (<code>EE.HSWc</code>, <code>EE.HSWm</code>), and accelerated mean model (<code>AMM</code>).</p>
+<p>A comprehensive review can be found in <a href="https://doi.org/10.1111/insr.12271" class="uri">https://doi.org/10.1111/insr.12271</a>.</p>
 <div id="installation" class="section level3">
 <h3 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h3>
 <p>You can install spef from CRAN using</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">"spef"</span>)
 <span class="kw">library</span>(spef)</code></pre></div>
-<p>You can install spef from github with:</p>
+<p>You can install spef from GitHub with:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">## install.packages("devtools")
 devtools::<span class="kw">install_github</span>(<span class="st">"stc04003/spef"</span>)</code></pre></div>
 </div>
 <div id="reference" class="section level3">
 <h3 class="hasAnchor">
 <a href="#reference" class="anchor"></a>Reference</h3>
-<p>Chiou, S., Huang, C.-Y., Xu, G., and Yan, J. (2018). Semiparametric regression analysis of panel count data: A practical review. <em>International Statistical Review</em>, <a href="https://doi.org/10.1111/insr.12271" class="uri">https://doi.org/10.1111/insr.12271</a>.</p>
-<p>Sun, J. and Wei, L. J. (2000). Regression analysis of panel count data with covariates-dependent observation and cesoring times. <em>Journal of the Royal Statistical Society, Series B: Statistical Methodology</em>, <strong>62</strong>(2):293–302.</p>
+<p>Sun, J. and Wei, L. J. (2000). Regression analysis of panel count data with covariates-dependent observation and censoring times. <em>Journal of the Royal Statistical Society, Series B: Statistical Methodology</em>, <strong>62</strong>(2):293–302.</p>
 <p>Zhang, Y. (2002). A Semiparametric pseudolikelihood estimation method for panel count data. <em>Biometrika</em> <strong>89</strong>(1), 39–48.</p>
-<p>Huang, C., Wang, M., and Zhang, Y. (2006). Analysing panel count data with informative observation times. <em>Biometrika</em> <strong>93</strong>(4), 763–776.</p>
+<p>Huang, C., Wang, M., and Zhang, Y. (2006). Analyzing panel count data with informative observation times. <em>Biometrika</em> <strong>93</strong>(4), 763–776.</p>
 <p>Lu, M., Zhang, Y., and Huang, J. (2007). Estimation of the mean function with panel count data using monotone polynomial splines. <em>Biometrika</em> <strong>94</strong>(3), 705–718.</p>
 <p>Wang, X. and Yan, J. (2011). Fitting semiparametric regressions for panel count survival data with an R package spef. <em>Computer methods and programs in biomedicine</em> <strong>104</strong>(2), 278–285.</p>
 <p>Wang, X. and Yan, J. (2013). Augmented estimating equations for semiparametric panel count regression with informative observation times and censoring time. <em>Statistica Sinica</em>, 359–381.</p>
+<p>Chiou, S., Huang, C.-Y., Xu, G., and Yan, J. (2018). Semiparametric regression analysis of panel count data: A practical review. <em>International Statistical Review</em>, <a href="https://doi.org/10.1111/insr.12271" class="uri">https://doi.org/10.1111/insr.12271</a>.</p>
 </div>
 </div>
   </div>
