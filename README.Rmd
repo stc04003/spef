@@ -26,7 +26,7 @@ HuangWang-Zhang’s method (HWZ), Zhang’s maximum pseudolikelihood (MPL),
 Maximum pseudolikelihood with I-Splines (MPLs), Maximum likelihood with I-Splines (MLs),
 and Sun-Wei’s method (SWa, SWb, SWc).
 
-#### Installation
+### Installation
 
 You can install spef from CRAN using
 
@@ -42,7 +42,11 @@ You can install spef from github with:
 devtools::install_github("stc04003/spef")
 ```
 
-#### Reference
+### Reference
+
+  Chiou, S., Huang, C.-Y., Xu, G., and Yan, J. (2018). Semiparametric
+  regression analysis of panel count data: A practical review. 
+  *International Statistical Review*, https://doi.org/10.1111/insr.12271.
 
   Sun, J. and Wei, L. J. (2000). Regression analysis of panel count
   data with covariates-dependent observation and cesoring

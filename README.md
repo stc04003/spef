@@ -1,11 +1,11 @@
 **spef**
 --------
 
-[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active) [![minimal R version](https://img.shields.io/badge/R%3E%3D-3.4.4-6666ff.svg)](https://cran.r-project.org/) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/spef)](https://cran.r-project.org/package=spef) [![packageversion](https://img.shields.io/badge/Package%20version-1.0.8-orange.svg?style=flat-square)](commits/master) [![Last-changedate](https://img.shields.io/badge/last%20change-2018--06--12-yellowgreen.svg)](/commits/master) ----
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active) [![minimal R version](https://img.shields.io/badge/R%3E%3D-3.4.4-6666ff.svg)](https://cran.r-project.org/) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/spef)](https://cran.r-project.org/package=spef) [![packageversion](https://img.shields.io/badge/Package%20version-1.0.8-orange.svg?style=flat-square)](commits/master) [![Last-changedate](https://img.shields.io/badge/last%20change-2018--07--31-yellowgreen.svg)](/commits/master) ----
 
 Estimating procedures include: Wang-Yan’s augmented estimating equations (AEE, AEEX), HuangWang-Zhang’s method (HWZ), Zhang’s maximum pseudolikelihood (MPL), Maximum pseudolikelihood with I-Splines (MPLs), Maximum likelihood with I-Splines (MLs), and Sun-Wei’s method (SWa, SWb, SWc).
 
-#### Installation
+### Installation
 
 You can install spef from CRAN using
 
@@ -21,7 +21,9 @@ You can install spef from github with:
 devtools::install_github("stc04003/spef")
 ```
 
-#### Reference
+### Reference
+
+Chiou, S., Huang, C.-Y., Xu, G., and Yan, J. (2018). Semiparametric regression analysis of panel count data: A practical review. *International Statistical Review*, <https://doi.org/10.1111/insr.12271>.
 
 Sun, J. and Wei, L. J. (2000). Regression analysis of panel count data with covariates-dependent observation and cesoring times. *Journal of the Royal Statistical Society, Series B: Statistical Methodology*, **62**(2):293--302.
 
