@@ -1,4 +1,9 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^README\.Rmd$
+^README\.md$
 ^README-.*\.png$
+^docs$
+^\.Rhistory$
+^test$
+~$
