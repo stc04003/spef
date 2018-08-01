@@ -13,17 +13,17 @@
 }
 \description{
 Plot the estimated baseline mean function. If \code{"se"} option of
-  \code{panelReg} is not \code{"NULL"}, 95 percent point wise confidence
+  \code{panelReg} is not \code{"NULL"}, 95% point wise confidence
   interval is also plotted.
 }
 \examples{
 data(blaTum)
 ## Plot the fit of bladder tumor data set
 formula <- PanelSurv(id, time, count) ~ num + size + treatment
-fit1 <- panelReg(formula, data=blaTum, method="AEE", se="Sandwich")
+fit1 <- panelReg(formula, data=blaTum, method = "AEE", se = "Sandwich")
 plot(fit1)
 
-fit2 <- panelReg(formula, data=blaTum, method="MLs", se="NULL")
+fit2 <- panelReg(formula, data=blaTum, method = "MLs", se = "NULL")
 plot(fit2)
 }
 \seealso{

@@ -6,18 +6,18 @@
 \title{Skin cancer chemoprevention trial}
 \format{This data frame contains the following columns:
 \describe{
-  \item{\code{id}}{: patient id (repeated for each recurrence)}
-  \item{\code{time}}{: observation time}
-  \item{\code{age}}{: patient's age at enrollment}
-  \item{\code{male}}{: gender; male = 1, female = 0}
-  \item{\code{dfmo}}{: treatment (DFMO) group = 1; placebo = 0}
-  \item{\code{priorTumor}}{: number of prior tumor from diagnosis to randomization}
+  \item{\code{id}}{: patient id (repeated for each recurrence).}
+  \item{\code{time}}{: observation time.}
+  \item{\code{age}}{: patient's age at enrollment.}
+  \item{\code{male}}{: gender; male = 1, female = 0.}
+  \item{\code{dfmo}}{: treatment (DFMO) group = 1; placebo = 0.}
+  \item{\code{priorTumor}}{: number of prior tumor from diagnosis to randomization.}
   \item{\code{countBC}}{: number of newly developed basal cell carcinomas tumors since
-  last observation time}
+  last observation time.}
   \item{\code{countSC}}{: number of newly developed squamous cell carcinomas
-  tumors since last observation time}
+  tumors since last observation time.}
   \item{\code{count}}{: number of newly developed non-melanoma tumors
-  since last observation time; this is equal to countBC + countSC}
+  since last observation time; this is equal to \code{countBC + countSC}.}
 }}
 \usage{
 data(skinTumor)

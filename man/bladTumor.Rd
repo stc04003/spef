@@ -38,15 +38,15 @@ print(p)
 }
 \references{
 Byar, D. P. (1980). The Veterans administration study of chemoprophylaxis
-for recurrent stage I bladder tumors: comparisons of placebo, pyridoxine, and topical thiotepa.
+for recurrent stage I bladder tumors: Comparisons of placebo, pyridoxine, and topical thiotepa.
 \emph{Bladder Tumors and Other Topics in Urological Oncology}, pp. 363--370. New York: Plenum.
 
 Wellner, J. A. and Zhang, Y. (2007) Two likelihood-based semiparametric estimation
-methods for panel count data with covariates. \emph{Annals of Statistics}, \bold{35} 2106--2142.
+methods for panel count data with covariates. \emph{Annals of Statistics}, \bold{35}(5), 2106--2142.
 
 Lu, M., Zhang, Y. and Huang, J. (2009) Semiparametric estimation methods for panel
 count data using monotone B-Splines. \emph{Journal of the American Statistical Association}
-\bold{104} 1060--1070.
+\bold{104}(487), 1060--1070.
 }
 \seealso{
 \code{\link{blaTum}}

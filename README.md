@@ -25,16 +25,16 @@ devtools::install_github("stc04003/spef")
 
 ### Reference
 
-Sun, J. and Wei, L. J. (2000). Regression analysis of panel count data with covariates-dependent observation and censoring times. *Journal of the Royal Statistical Society, Series B: Statistical Methodology*, **62**(2):293--302.
+Sun, J. and Wei, L. J. (2000). Regression analysis of panel count data with covariates-dependent observation and censoring times. *Journal of the Royal Statistical Society, Series B: Statistical Methodology*, **62**(2), 293--302.
 
-Zhang, Y. (2002). A Semiparametric pseudolikelihood estimation method for panel count data. *Biometrika* **89**(1), 39--48.
+Zhang, Y. (2002). A Semiparametric pseudolikelihood estimation method for panel count data. *Biometrika*, **89**(1), 39--48.
 
-Huang, C., Wang, M., and Zhang, Y. (2006). Analyzing panel count data with informative observation times. *Biometrika* **93**(4), 763--776.
+Huang, C., Wang, M., and Zhang, Y. (2006). Analyzing panel count data with informative observation times. *Biometrika*, **93**(4), 763--776.
 
 Lu, M., Zhang, Y., and Huang, J. (2007). Estimation of the mean function with panel count data using monotone polynomial splines. *Biometrika* **94**(3), 705--718.
 
 Wang, X. and Yan, J. (2011). Fitting semiparametric regressions for panel count survival data with an R package spef. *Computer methods and programs in biomedicine* **104**(2), 278--285.
 
-Wang, X. and Yan, J. (2013). Augmented estimating equations for semiparametric panel count regression with informative observation times and censoring time. *Statistica Sinica*, 359--381.
+Wang, X. and Yan, J. (2013). Augmented estimating equations for semiparametric panel count regression with informative observation times and censoring time. *Statistica Sinica*, **23**(1), 359--381.
 
 Chiou, S., Huang, C.-Y., Xu, G., and Yan, J. (2018). Semiparametric regression analysis of panel count data: A practical review. *International Statistical Review*, <https://doi.org/10.1111/insr.12271>.

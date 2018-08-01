@@ -42,7 +42,7 @@ recurrent stage I bladder tumors: comparisons of placebo, pyridoxine, and topica
 Sun, J. and Wei, L. J. (2000) Regression analysis of panel count data
  with covariate dependent observation and censoring times.
  \emph{Journal of the Royal Statistical Society, Series B: Statistical Methodology},
-\bold{62} 293--302.
+\bold{62}(2), 293--302.
 
 Huang, C. Y., Wang, M. C. and Zhang, Y. (2006).
 Analyzing panel count data with informative observation times.

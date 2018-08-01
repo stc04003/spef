@@ -31,17 +31,22 @@ See \code{panelReg.object} for details.
 }
 \description{
 Fits an proportional means model:
-\eqn{\Lambda (t; X_i) = E[N_i(t)|X_i] = \Lambda (t)\exp (X_i ' \beta ),}
-  where \eqn{\beta} is a \eqn{p \times 1} vector of covariate
-  coefficient and \eqn{\Lambda(\cdot)} is a completely unspecified
-  baseline mean function.
+\deqn{\Lambda (t; X_i) = E[N_i(t)|X_i] = \Lambda(t)e^{X_i ' \beta},}
+where \eqn{\beta} is a \eqn{p \times 1} vector of covariate
+coefficient and \eqn{\Lambda(\cdot)} is a completely unspecified
+baseline mean function.
 
-  Estimating procedures include: Wang-Yan's augmented estimating
-  equations (AEE, AEEX), Huang-Wang-Zhang's method (HWZ), Zhang's
-  maximum pseudo-likelihood (MPL), Maximum pseudolikelihood with
-  I-Splines (MPLs), Maximum likelihood with I-Splines (MLs),
-  Sun-Wei's method (EE.SWa, EE.SWb, EE.SWc), and Hu-Sun-Wei's method
-  (EE.HSWc, EE.HSWm).
+Estimating procedures include: Wang-Yan's augmented estimating
+equations (\code{"AEE"}, \code{"AEEX"}),
+Huang-Wang-Zhang's method (\code{"HWZ"}),
+Zhang's maximum pseudo-likelihood (\code{"MPL"}),
+Maximum pseudolikelihood with I-Splines (\code{"MPLs"}),
+Maximum likelihood with I-Splines (\code{"MLs"}),
+Sun-Wei's method (\code{"EE.SWa"}, \code{"EE.SWb"}, \code{"EE.SWc"}),
+and Hu-Sun-Wei's method (\code{"EE.HSWc"}, \code{"EE.HSWm"}).
+
+The function can also fits an accelerated mean model (\code{"AMM"}):
+\deqn{\Lambda (t; X_i) = E[N_i(t)|X_i] = \Lambda(te^{X_i ' \beta})e^{X_i ' \beta}.}
 }
 \details{
 Some assumptions details about the observation times and censoring
@@ -75,13 +80,6 @@ censoring time.
   independent observation times and censoring time, and a Poisson
   underlying event process.
 
- \code{"SC"} is semiparametric scale-change model for the rate
-  model. The observation time process is allowed to be correlated with
-  the underlying recurrent event process through a frailty variable,
-  which does not need to be specified. The model also allows marginal
-  interpretations for the regression parameters and connects naturally
-  with AFT model.
-
 \code{"EE.SWa"}, \code{"EE.SWb"} and \code{"EE.SWc"} are estimating
   equation approaches based on Sun-Wei's methods.
   The first assumes independent observation times and censoring
@@ -97,11 +95,18 @@ censoring time.
   independent censoring time. Both variations work on centered covariates
   and avoid estimating the baseline mean.
 
+\code{"AMM"} is the accelerated mean model.
+  The observation time process is allowed to be correlated with
+  the underlying recurrent event process through a frailty variable,
+  which does not need to be specified. The model also allows marginal
+  interpretations for the regression parameters and connects naturally
+  with AFT model. See Chiou et al. (2017) for more details.
+
 For standard errors estimation method:
 
   \code{"NULL"} means do not calculate standard errors;
   \code{"smBootstrap"} is the smoothed bootstrap estimation method
-  that works with \code{"SCM"}.
+  that works with \code{"AMM"}.
   \code{"Bootstrap"} works with all fitting methods; \code{"Impute"} is
   the multiple imputation method that works with \code{"AEE"} and
   \code{"AEEX"}; \code{"Sandwich"} is the robust sandwich estimation
@@ -155,8 +160,8 @@ informative examination times. \emph{Biometrics}, to appear.
 <doi: 10.1111/biom.12840>.
 
 Huang, C.-Y., Wang, M., and Zhang, Y. (2006).
-Analyzing panel count data with informative observation times.
-\emph{Biometrika} \bold{93}(4), 763--776.
+Analysing panel count data with informative observation times.
+\emph{Biometrika}, \bold{93}(4), 763--776.
 
 Hu, X. J., Sun, J. and Wei, L. J. (2003).
 Regression parameter estimation from panel counts.
@@ -164,23 +169,23 @@ Regression parameter estimation from panel counts.
 
 Lu, M., Zhang, Y., and Huang, J. (2007).
 Estimation of the mean function with panel count data using monotone polynomial splines.
-\emph{Biometrika} \bold{94}(3), 705--718.
+\emph{Biometrika}, \bold{94}(3), 705--718.
 
 Sun, J. and Wei, L. J. (2000). Regression analysis of panel count
 data with covariates-dependent observation and censoring times.
 \emph{Journal of the Royal Statistical Society, Series B: Statistical Methodology},
-\bold{62}(2):293--302.
+\bold{62}(2), 293--302.
 
 Wang, X. and Yan, J. (2011). Fitting semiparametric regressions for panel
 count survival data with an R package spef.
-\emph{Computer Methods and Programs in Biomedicine} \bold{104}(2), 278--285.
+\emph{Computer Methods and Programs in Biomedicine}, \bold{104}(2), 278--285.
 
 Wang, X. and Yan, J. (2013). Augmented estimating equations for
 semiparametric panel count regression with informative observation
 times and censoring time. \emph{Statistica Sinica}, 359--381.
 
 Zhang, Y. (2002). A Semiparametric pseudolikelihood estimation method
-for panel count data. \emph{Biometrika} \bold{89}(1), 39--48.
+for panel count data. \emph{Biometrika}, \bold{89}(1), 39--48.
 }
 \seealso{
 \code{\link{panelReg.object}}

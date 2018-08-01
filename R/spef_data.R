@@ -19,13 +19,13 @@
 #' }
 #'
 #' @references Byar, D. P. (1980). The Veterans administration study of chemoprophylaxis
-#' for recurrent stage I bladder tumors: comparisons of placebo, pyridoxine, and topical thiotepa.
+#' for recurrent stage I bladder tumors: Comparisons of placebo, pyridoxine, and topical thiotepa.
 #' \emph{Bladder Tumors and Other Topics in Urological Oncology}, pp. 363--370. New York: Plenum.
 #' @references Wellner, J. A. and Zhang, Y. (2007) Two likelihood-based semiparametric estimation
-#' methods for panel count data with covariates. \emph{Annals of Statistics}, \bold{35} 2106--2142.
+#' methods for panel count data with covariates. \emph{Annals of Statistics}, \bold{35}(5), 2106--2142.
 #' @references Lu, M., Zhang, Y. and Huang, J. (2009) Semiparametric estimation methods for panel
 #' count data using monotone B-Splines. \emph{Journal of the American Statistical Association}
-#' \bold{104} 1060--1070.
+#' \bold{104}(487), 1060--1070.
 #' 
 #' @docType data
 #' @usage data(bladTumor)
@@ -68,7 +68,7 @@ NULL
 #' @references Sun, J. and Wei, L. J. (2000) Regression analysis of panel count data
 #'  with covariate dependent observation and censoring times.
 #'  \emph{Journal of the Royal Statistical Society, Series B: Statistical Methodology},
-#' \bold{62} 293--302.
+#' \bold{62}(2), 293--302.
 #' @references Huang, C. Y., Wang, M. C. and Zhang, Y. (2006).
 #' Analyzing panel count data with informative observation times.
 #' \emph{Biometrika}, \bold{93}(4): 763--776.
@@ -96,18 +96,18 @@ NULL
 #'
 #' @format This data frame contains the following columns:
 #' \describe{
-#'   \item{\code{id}}{: patient id (repeated for each recurrence)}
-#'   \item{\code{time}}{: observation time}
-#'   \item{\code{age}}{: patient's age at enrollment}
-#'   \item{\code{male}}{: gender; male = 1, female = 0}
-#'   \item{\code{dfmo}}{: treatment (DFMO) group = 1; placebo = 0}
-#'   \item{\code{priorTumor}}{: number of prior tumor from diagnosis to randomization}
+#'   \item{\code{id}}{: patient id (repeated for each recurrence).}
+#'   \item{\code{time}}{: observation time.}
+#'   \item{\code{age}}{: patient's age at enrollment.}
+#'   \item{\code{male}}{: gender; male = 1, female = 0.}
+#'   \item{\code{dfmo}}{: treatment (DFMO) group = 1; placebo = 0.}
+#'   \item{\code{priorTumor}}{: number of prior tumor from diagnosis to randomization.}
 #'   \item{\code{countBC}}{: number of newly developed basal cell carcinomas tumors since
-#'   last observation time}
+#'   last observation time.}
 #'   \item{\code{countSC}}{: number of newly developed squamous cell carcinomas
-#'   tumors since last observation time}
+#'   tumors since last observation time.}
 #'   \item{\code{count}}{: number of newly developed non-melanoma tumors
-#'   since last observation time; this is equal to countBC + countSC}
+#'   since last observation time; this is equal to \code{countBC + countSC}.}
 #' }
 #'
 #' @references Chiou, S., Xu, G., Yan, J., and Huang, C.-Y. (2017).
@@ -143,14 +143,14 @@ NULL
 #'
 #' @format This data frame contains the following columns:
 #' \describe{
-#'     \item{\code{id}}{: patient id (repeated for each recurrence)}
-#'     \item{\code{time}}{: observation time}
+#'     \item{\code{id}}{: patient id (repeated for each recurrence).}
+#'     \item{\code{time}}{: observation time.}
 #'     \item{\code{age}}{: patient's age at enrollment; age = 1 if greater
-#'       than 65, age = 0 otherwise}
-#'     \item{\code{male}}{: gender; male = 1, female = 0}
-#'     \item{\code{dfmo}}{: treatment (DFMO) group = 1; placebo = 0}
-#'     \item{\code{priorTumor}}{: number of prior tumor from diagnosis to randomization}
-#'     \item{\code{count}}{: number of new tumors since last observation time}
+#'       than 65, age = 0 otherwise.}
+#'     \item{\code{male}}{: gender; male = 1, female = 0.}
+#'     \item{\code{dfmo}}{: treatment (DFMO) group = 1; placebo = 0.}
+#'     \item{\code{priorTumor}}{: number of prior tumor from diagnosis to randomization.}
+#'     \item{\code{count}}{: number of new tumors since last observation time.}
 #'   }
 #'
 #' @docType data

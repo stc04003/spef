@@ -6,14 +6,14 @@
 \title{A Simulated Data Mimicking a Skin Cancer Chemoprevention Trial}
 \format{This data frame contains the following columns:
 \describe{
-    \item{\code{id}}{: patient id (repeated for each recurrence)}
-    \item{\code{time}}{: observation time}
+    \item{\code{id}}{: patient id (repeated for each recurrence).}
+    \item{\code{time}}{: observation time.}
     \item{\code{age}}{: patient's age at enrollment; age = 1 if greater
-      than 65, age = 0 otherwise}
-    \item{\code{male}}{: gender; male = 1, female = 0}
-    \item{\code{dfmo}}{: treatment (DFMO) group = 1; placebo = 0}
-    \item{\code{priorTumor}}{: number of prior tumor from diagnosis to randomization}
-    \item{\code{count}}{: number of new tumors since last observation time}
+      than 65, age = 0 otherwise.}
+    \item{\code{male}}{: gender; male = 1, female = 0.}
+    \item{\code{dfmo}}{: treatment (DFMO) group = 1; placebo = 0.}
+    \item{\code{priorTumor}}{: number of prior tumor from diagnosis to randomization.}
+    \item{\code{count}}{: number of new tumors since last observation time.}
   }}
 \usage{
 data(skiTum)

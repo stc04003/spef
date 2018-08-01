@@ -9,7 +9,7 @@
   \item{baseline}{a step function or spline function, estimated
     cumulative baseline mean.}
   \item{timeGrid}{a vector, ordered unique set of observation times.}
-  \item{lambda}{a vector, estimated baseline mean for each interval}
+  \item{lambda}{a vector, estimated baseline mean for each interval.}
   \item{convergence}{an integer code, \code{0} indicates successful
     convergence, error code \code{1} indicates that the iteration limit
     \code{maxIter} had been reached.}

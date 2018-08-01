@@ -12,7 +12,8 @@ semiparametric regression models for panel count survival data.
 Estimating procedures include: Wang-Yan’s augmented estimating equations (AEE, AEEX),
 Huang-Wang-Zhang’s method (HWZ), Zhang’s maximum pseudolikelihood (MPL),
 Maximum pseudolikelihood with I-Splines (MPLs), Maximum likelihood with I-Splines (MLs),
-and Sun-Wei’s method (SWa, SWb, SWc).
+Sun-Wei’s method (`EE.SWa`, `EE.SWb`, `EE.SWc`), Hu-Sun-Wei's method (`EE.HSWc`, `EE.HSWm`),
+and accelerated mean model (`AMM`).
 }
 \references{
 Chiou, S., Xu, G., Yan, J., and Huang, C.-Y. (2017).
@@ -22,7 +23,7 @@ informative examination times. \emph{Biometrics}, to appear.
 
 Huang, C.-Y., Wang, M., and Zhang, Y. (2006).
 Analysing panel count data with informative observation times.
-\emph{Biometrika} \bold{93}(4), 763--776.
+\emph{Biometrika}, \bold{93}(4), 763--776.
 
 Hu, X. J., Sun, J. and Wei, L. J. (2003).
 Regression parameter estimation from panel counts.
@@ -30,12 +31,12 @@ Regression parameter estimation from panel counts.
 
 Lu, M., Zhang, Y., and Huang, J. (2007).
 Estimation of the mean function with panel count data using monotone polynomial splines.
-\emph{Biometrika} \bold{94}(3), 705--718.
+\emph{Biometrika}, \bold{94}(3), 705--718.
 
 Sun, J. and Wei, L. J. (2000). Regression analysis of panel count
 data with covariates-dependent observation and censoring times.
 \emph{Journal of the Royal Statistical Society, Series B: Statistical Methodology},
-\bold{62}(2):293--302.
+\bold{62}(2), 293--302.
 
 Wang, X. and Yan, J. (2011). Fitting semiparametric regressions for panel
 count survival data with an R package spef.
@@ -43,10 +44,10 @@ count survival data with an R package spef.
 
 Wang, X. and Yan, J. (2013). Augmented estimating equations for
 semiparametric panel count regression with informative observation
-times and censoring time. \emph{Statistica Sinica}, 359--381.
+times and censoring time. \emph{Statistica Sinica}, \bold{23}(1), 359--381.
 
 Zhang, Y. (2002). A Semiparametric pseudolikelihood estimation method
-for panel count data. \emph{Biometrika} \bold{89}(1), 39--48.
+for panel count data. \emph{Biometrika}, \bold{89}(1), 39--48.
 }
 \seealso{
 Useful links:
