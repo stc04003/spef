@@ -8,7 +8,7 @@ Description: Functions for fitting semiparametric regression models for
         panel count survival data. An overview of the package can be found 
         in Wang and Yan (2011) <doi:10.1016/j.cmpb.2010.10.005> and
 	Chiou et al. (2018) <doi:10.1111/insr.12271>.
-Depends: R (>= 3.4.4)
+Depends: R (>= 3.4.0)
 License: GPL (>= 3)
 URL: http://github.com/stc04003/spef
 BugReports: http://github.com/stc04003/spef/issues

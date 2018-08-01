@@ -19,9 +19,8 @@ data(blaTum)
 \description{
 A data frame contains data on recurrences of bladder cancer,
 used by many people to demonstrate methodology for recurrent event modelling.
-This data set organized differently from \code{bladTumor} and is adapted from
-\url{http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1467-9868/homepage/62_2.html},
-containing records of 85 patients from two treatment arms:
+This data set organized differently from \code{bladTumor}.
+The data contains records of 85 patients from two treatment arms:
 48 are from the placebo arm, and the rest 37 are from the thiotepa arm.
 }
 \note{
