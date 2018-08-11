@@ -7,3 +7,4 @@
 ^\.Rhistory$
 ^test$
 ~$
+^\.travis\.yml$
