@@ -13,6 +13,7 @@ output:
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/spef)](https://cran.r-project.org/package=spef)
 [![packageversion](https://img.shields.io/badge/Package%20version-1.0.8-orange.svg?style=flat-square)](commits/master)
 [![Last-changedate](https://img.shields.io/badge/last%20change-`r gsub('-', '--', Sys.Date())`-yellowgreen.svg)](/commits/master)
+
 ----
 
 ```{r, echo = FALSE}
