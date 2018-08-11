@@ -3,9 +3,7 @@
 language: R
 sudo: false
 cache: packages
-sudo: false
 r:
   - oldrel
   - release
   - devel
-r_github_package
