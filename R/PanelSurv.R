@@ -1,3 +1,5 @@
+globalVariables(c("ID", "time2"))
+
 #' @name PanelSurv
 #' @rdname PanelSurv
 #' @title Create a PanelSurv Object
@@ -66,6 +68,7 @@ is.PanelSurv <- function(x) inherits(x, "PanelSurv")
 #' @param order an optional logical value indicating whether the event plot (when \code{CSM = FALSE})
 #' will be sorted by the largest observationt time.
 #'
+#' @importFrom ggplot2 ylab xlab geom_bar coord_flip theme element_blank element_text
 #' @return A \code{ggplot} object
 #' @export
 plot.PanelSurv <- function(x, heat = FALSE, order = TRUE, ...) {
