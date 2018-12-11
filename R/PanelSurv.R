@@ -59,9 +59,36 @@ PanelSurv <- function(ID, time, count) {
 #' @export
 is.PanelSurv <- function(x) inherits(x, "PanelSurv")
 
+#' Produce Tile Plot
+#'
+#' @param x an object of class \code{PanelSurv}.
+#' @param heat an optional logical value indicating whether a swimmer-plot-like tile plot will be produced.
+#' @param order an optional logical value indicating whether the event plot (when \code{CSM = FALSE})
+#' will be sorted by the largest observationt time.
+#'
+#' @return A \code{ggplot} object
 #' @export
-plot.PanelSurv <- function(x, ...) {
-    with(x$psDF, ggplot(data = x$psDF, aes(time, ID, height = 2, width = 15)) +
-                 geom_tile(aes(fill = count)) + theme_bw() +
-                 scale_fill_gradient(low = "grey", high = "black"))
-}
+plot.PanelSurv <- function(x, heat = FALSE, order = TRUE, ...) {
+    if (order) {
+        ranks <- rank(aggregate(time ~ ID, max, data = x$psDF)$time, ties.method = "first")
+        x$psDF$ID <- ranks[x$psDF$ID]
+        x$psDF <- x$psDF[order(x$psDF$ID),]
+    }
+    if (!heat) {
+        ggplot(data = x$psDF, aes(time, ID, height = 2, width = 15)) +
+            geom_tile(aes(fill = count)) + theme_bw() +
+            scale_fill_gradient(low = "grey", high = "black") +
+            ylab("Time") + xlab("Subject")
+    } else {
+        x$psDF$time2 <- with(x$ps, unlist(lapply(split(time, ID), function(x) diff(c(0, x)))))
+        ggplot(x$psDF, aes(ID, time2, fill = count)) +
+            geom_bar(stat = "identity", color = "black", size = .1) +
+            scale_fill_gradient(low = "gray80", high = "gray10") +
+            theme_bw() + coord_flip() +
+            theme(axis.line.y = element_blank(),
+                  axis.title.y = element_text(vjust = 0),
+                  axis.text.y = element_blank(),
+                  axis.ticks.y = element_blank()) +
+            ylab("Time") + xlab("Subject")
+    }
+}    

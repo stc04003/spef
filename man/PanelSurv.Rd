@@ -2,7 +2,6 @@
 % Please edit documentation in R/PanelSurv.R
 \name{PanelSurv}
 \alias{PanelSurv}
-\alias{PanelSurv}
 \alias{is.PanelSurv}
 \title{Create a PanelSurv Object}
 \usage{
