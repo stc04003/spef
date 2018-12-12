@@ -20,5 +20,5 @@ will be sorted by the largest observationt time.}
 A \code{ggplot} object
 }
 \description{
-Produce Tile Plot
+Plot the tile plot from a \code{PanelSurv} object.
 }

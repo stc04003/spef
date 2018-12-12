@@ -63,8 +63,11 @@ is.PanelSurv <- function(x) inherits(x, "PanelSurv")
 
 #' Produce Tile Plot
 #'
+#' Plot the tile plot from a \code{PanelSurv} object.
+#' 
 #' @param x an object of class \code{PanelSurv}.
-#' @param heat an optional logical value indicating whether a swimmer-plot-like tile plot will be produced.
+#' @param heat an optional logical value indicating whether
+#' a swimmer-plot-like tile plot will be produced.
 #' @param order an optional logical value indicating whether the event plot (when \code{CSM = FALSE})
 #' will be sorted by the largest observationt time.
 #' @param ... future extension
