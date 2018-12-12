@@ -4,7 +4,7 @@
 \alias{plot.PanelSurv}
 \title{Produce Tile Plot}
 \usage{
-\method{plot}{PanelSurv}(x, heat = FALSE, order = TRUE, ...)
+\method{plot}{PanelSurv}(x, heat = FALSE, order = TRUE)
 }
 \arguments{
 \item{x}{an object of class \code{PanelSurv}.}
