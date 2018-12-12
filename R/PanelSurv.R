@@ -71,7 +71,7 @@ is.PanelSurv <- function(x) inherits(x, "PanelSurv")
 #' @importFrom ggplot2 ylab xlab geom_bar coord_flip theme element_blank element_text
 #' @return A \code{ggplot} object
 #' @export
-plot.PanelSurv <- function(x, heat = FALSE, order = TRUE, ...) {
+plot.PanelSurv <- function(x, heat = FALSE, order = TRUE) {
     if (order) {
         ranks <- rank(aggregate(time ~ ID, max, data = x$psDF)$time, ties.method = "first")
         x$psDF$ID <- ranks[x$psDF$ID]
