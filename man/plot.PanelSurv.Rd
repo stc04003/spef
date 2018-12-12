@@ -4,7 +4,7 @@
 \alias{plot.PanelSurv}
 \title{Produce Tile Plot}
 \usage{
-\method{plot}{PanelSurv}(x, heat = FALSE, order = TRUE)
+\method{plot}{PanelSurv}(x, heat = FALSE, order = TRUE, ...)
 }
 \arguments{
 \item{x}{an object of class \code{PanelSurv}.}
@@ -13,6 +13,8 @@
 
 \item{order}{an optional logical value indicating whether the event plot (when \code{CSM = FALSE})
 will be sorted by the largest observationt time.}
+
+\item{...}{future extension}
 }
 \value{
 A \code{ggplot} object

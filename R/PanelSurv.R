@@ -67,11 +67,12 @@ is.PanelSurv <- function(x) inherits(x, "PanelSurv")
 #' @param heat an optional logical value indicating whether a swimmer-plot-like tile plot will be produced.
 #' @param order an optional logical value indicating whether the event plot (when \code{CSM = FALSE})
 #' will be sorted by the largest observationt time.
+#' @param ... future extension
 #'
 #' @importFrom ggplot2 ylab xlab geom_bar coord_flip theme element_blank element_text
 #' @return A \code{ggplot} object
 #' @export
-plot.PanelSurv <- function(x, heat = FALSE, order = TRUE) {
+plot.PanelSurv <- function(x, heat = FALSE, order = TRUE, ...) {
     if (order) {
         ranks <- rank(aggregate(time ~ ID, max, data = x$psDF)$time, ties.method = "first")
         x$psDF$ID <- ranks[x$psDF$ID]
