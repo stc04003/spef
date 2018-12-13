@@ -4,9 +4,10 @@
 \alias{panelReg}
 \title{Fits Semiparametric Regression Models for Panel Count Survival Data}
 \usage{
-panelReg(formula, data, method = c("AEE", "AEEX", "HWZ", "MPL", "MPLs", "MLs",
-  "AMM", "EE.SWa", "EE.SWb", "EE.SWc", "EE.HSWc", "EE.HSWm"), se = c("NULL",
-  "smBootstrap", "Bootstrap", "Impute", "Sandwich"), control = list())
+panelReg(formula, data, method = c("AEE", "AEEX", "HWZ", "MPL", "MPLs",
+  "MLs", "AMM", "EE.SWa", "EE.SWb", "EE.SWc", "EE.HSWc", "EE.HSWm"),
+  se = c("NULL", "smBootstrap", "Bootstrap", "Impute", "Sandwich"),
+  control = list())
 }
 \arguments{
 \item{formula}{A formula object, with the response on the left of a

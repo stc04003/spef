@@ -82,7 +82,8 @@ plot.PanelSurv <- function(x, heat = FALSE, order = TRUE, ...) {
         x$psDF <- x$psDF[order(x$psDF$ID),]
     }
     if (!heat) {
-        ggplot(data = x$psDF, aes(time, ID, height = 2, width = 15)) +
+        tileH <- 4500 / length(unique(x$psDF$ID))
+        ggplot(data = x$psDF, aes(time, ID, height = 2, width = tileH)) +
             geom_tile(aes(fill = count)) + theme_bw() +
             scale_fill_gradient(low = "grey", high = "black") +
             ylab("Time") + xlab("Subject")
