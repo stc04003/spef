@@ -76,6 +76,8 @@ is.PanelSurv <- function(x) inherits(x, "PanelSurv")
 #' @return A \code{ggplot} object
 #' @export
 plot.PanelSurv <- function(x, heat = FALSE, order = TRUE, ...) {
+    tmp <- aggregate(time ~ ID, length, data = x$psDF)[,2]
+    x$psDF$ID <- rep(1:length(tmp), tmp)
     if (order) {
         ranks <- rank(aggregate(time ~ ID, max, data = x$psDF)$time, ties.method = "first")
         x$psDF$ID <- ranks[x$psDF$ID]
