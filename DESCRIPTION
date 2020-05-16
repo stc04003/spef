@@ -14,7 +14,7 @@ URL: http://github.com/stc04003/spef
 BugReports: http://github.com/stc04003/spef/issues
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.0
+RoxygenNote: 6.1.1
 Imports: BB,
     SQUAREM,
     ggplot2,

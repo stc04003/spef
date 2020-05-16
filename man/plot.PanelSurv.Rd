@@ -9,9 +9,10 @@
 \arguments{
 \item{x}{an object of class \code{PanelSurv}.}
 
-\item{heat}{an optional logical value indicating whether a swimmer-plot-like tile plot will be produced.}
+\item{heat}{an optional logical value indicating whether
+a swimmer-plot-like tile plot will be produced.}
 
-\item{order}{an optional logical value indicating whether the event plot (when \code{CSM = FALSE})
+\item{order}{an optional logical value indicating whether the tile plot
 will be sorted by the largest observationt time.}
 
 \item{...}{future extension}

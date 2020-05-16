@@ -64,11 +64,11 @@ is.PanelSurv <- function(x) inherits(x, "PanelSurv")
 #' Produce Tile Plot
 #'
 #' Plot the tile plot from a \code{PanelSurv} object.
-#' 
+#'
 #' @param x an object of class \code{PanelSurv}.
 #' @param heat an optional logical value indicating whether
 #' a swimmer-plot-like tile plot will be produced.
-#' @param order an optional logical value indicating whether the event plot (when \code{CSM = FALSE})
+#' @param order an optional logical value indicating whether the tile plot
 #' will be sorted by the largest observationt time.
 #' @param ... future extension
 #'
@@ -84,7 +84,8 @@ plot.PanelSurv <- function(x, heat = FALSE, order = TRUE, ...) {
         x$psDF <- x$psDF[order(x$psDF$ID),]
     }
     if (!heat) {
-        ggplot(data = x$psDF, aes(time, ID, height = 2, width = 15)) +
+        tileH <- 4500 / length(unique(x$psDF$ID))
+        ggplot(data = x$psDF, aes(time, ID, height = 2, width = tileH)) +
             geom_tile(aes(fill = count)) + theme_bw() +
             scale_fill_gradient(low = "grey", high = "black") +
             ylab("Time") + xlab("Subject")
@@ -100,4 +101,4 @@ plot.PanelSurv <- function(x, heat = FALSE, order = TRUE, ...) {
                   axis.ticks.y = element_blank()) +
             ylab("Time") + xlab("Subject")
     }
-}    
+}
