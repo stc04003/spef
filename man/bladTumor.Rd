@@ -31,10 +31,7 @@ To our surprise, the two-treatment (placebo and thiotepa) subset of
   version \code{blaTum}.
 }
 \examples{
-data(bladTumor)
-## Plot bladder tumor data
-p <- plot(with(bladTumor, PanelSurv(subject, time, count2)))
-print(p)
+inst/examples/ex_bladTumor.R
 }
 \references{
 Byar, D. P. (1980). The Veterans administration study of chemoprophylaxis

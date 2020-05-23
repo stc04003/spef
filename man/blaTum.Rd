@@ -28,10 +28,7 @@ To our surprise, the two-treatment (placebo and thiotepa) subset of
 the full version \code{bladTumor} do not match the two-treatment version \code{blaTum}.
 }
 \examples{
-data(blaTum)
-library(ggplot2)
-ggplot(blaTum, aes(time, id)) + geom_tile(aes(fill=count)) +
-   facet_grid(treatment ~ ., scales="free_y", )
+inst/examples/ex_blaTum.R
 }
 \references{
 Byar, D. P. (1980). The Veterans administration study of chemoprophylaxis for

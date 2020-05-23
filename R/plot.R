@@ -94,15 +94,7 @@ setMethod("doPanelFitPlot",
 #'
 #' @seealso \code{\link{panelReg}} \code{\link{panelReg.object}}
 #' @export
-#' @examples
-#' data(blaTum)
-#' ## Plot the fit of bladder tumor data set
-#' formula <- PanelSurv(id, time, count) ~ num + size + treatment
-#' fit1 <- panelReg(formula, data=blaTum, method = "AEE", se = "Sandwich")
-#' plot(fit1)
-#'
-#' fit2 <- panelReg(formula, data=blaTum, method = "MLs", se = "NULL")
-#' plot(fit2)
+#' @examples inst/examples/ex_plotPanelReg.R
 plot.panelReg <- function(x, ...) {
     doPanelFitPlot(baseline = x$baseline, timeGrid = x$timeGrid,
                    baselineSE = x$baselineSE, baselineMat = x$baselineMat,

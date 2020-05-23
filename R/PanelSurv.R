@@ -30,11 +30,7 @@ globalVariables(c("ID", "time2"))
 #' indicating number of counts since last observation time.
 #'
 #' @seealso \code{\link{panelReg}}
-#' @examples
-#' data(blaTum)
-#' response <- with(blaTum, PanelSurv(id, time, count))
-#' is.PanelSurv(response)
-#' plot(response)
+#' @examples inst/examples/ex_PanelSurv.R
 NULL
 
 #' @rdname PanelSurv

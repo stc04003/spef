@@ -36,11 +36,7 @@
 #'   version \code{blaTum}.
 #'
 #' @seealso \code{\link{blaTum}}
-#' @examples
-#' data(bladTumor)
-#' ## Plot bladder tumor data
-#' p <- plot(with(bladTumor, PanelSurv(subject, time, count2)))
-#' print(p)
+#' @examples inst/examples/ex_bladTumor.R
 NULL
 
 #' Bladder Tumors Cancer Recurrences
@@ -81,11 +77,7 @@ NULL
 #' @usage data(blaTum)
 #' 
 #' @seealso \code{\link{bladTumor}}
-#' @examples
-#' data(blaTum)
-#' library(ggplot2)
-#' ggplot(blaTum, aes(time, id)) + geom_tile(aes(fill=count)) +
-#'    facet_grid(treatment ~ ., scales="free_y", )
+#' @examples inst/examples/ex_blaTum.R
 NULL
 
 #' Skin cancer chemoprevention trial
@@ -121,17 +113,7 @@ NULL
 #' @usage data(skinTumor)
 #' @seealso \code{skiTum}
 #' 
-#' @examples
-#' data(skinTumor)
-#' library(ggplot2)
-#' ggplot(skinTumor, aes(time, id, width = 25, height = 2)) +
-#'     geom_tile(aes(fill = count)) + theme_bw() +
-#'     facet_grid(dfmo ~ ., scales = "free_y", as.table = FALSE,
-#'                labeller = labeller(dfmo = function(x) paste("DFMO =", x))) +
-#'     scale_fill_gradient(low = "grey", high = "black") +
-#'     scale_x_continuous(breaks = seq(0, 2000, 200)) +
-#'     labs(fill = "Count") + xlab("Time in days")
-#' 
+#' @examples inst/examples/ex_skinTumor.R
 NULL
 
 #' A Simulated Data Mimicking a Skin Cancer Chemoprevention Trial
@@ -158,13 +140,5 @@ NULL
 #' @usage data(skiTum)
 #' @seealso \code{skinTumor}
 #' 
-#' @examples
-#' data(skiTum)
-#' library(ggplot2)
-#' skiTum$dfmo <- factor(skiTum$dfmo, levels = c(1, 0), labels = c("placebo", "DFMO"))
-#' ggplot(skiTum, aes(time, id, height = 2, width = 25)) +
-#'     geom_tile(aes(fill = count)) + theme_bw() +
-#'     facet_grid(dfmo ~ ., scales = "free_y") +
-#'     scale_fill_gradient(low = "grey", high = "black") + labs(fill="Count") +
-#'     scale_x_continuous(breaks = seq(0, 1800, 100)) + xlab("Time in days")
+#' @examples inst/examples/ex_skiTum.R
 NULL

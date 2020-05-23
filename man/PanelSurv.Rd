@@ -41,10 +41,7 @@ Create a panel count survival object,
 usually used as a response variable in a model formula.
 }
 \examples{
-data(blaTum)
-response <- with(blaTum, PanelSurv(id, time, count))
-is.PanelSurv(response)
-plot(response)
+inst/examples/ex_PanelSurv.R
 }
 \seealso{
 \code{\link{panelReg}}
