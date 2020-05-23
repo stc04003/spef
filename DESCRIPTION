@@ -1,6 +1,6 @@
 Package: spef
 Title: Semiparametric Estimating Functions
-Version: 1.0.8
+Version: 1.0.9
 Authors@R: c(person("Sy Han (Steven)", "Chiou", email = "schiou@utdallas.edu", role = c("aut", "cre")),
 	   person("Xiaojing", "Wang", role = "aut"),
 	   person("Jun", "Yan", role = "aut"))

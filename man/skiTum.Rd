@@ -25,7 +25,14 @@ the Skin Cancer Chemoprevention Trial used in Chiou et al. (2017).
 This data set contains records of 100 simulated patients.
 }
 \examples{
-inst/examples/ex_skiTum.R
+data(skiTum)
+library(ggplot2)
+skiTum$dfmo <- factor(skiTum$dfmo, levels = c(1, 0), labels = c("placebo", "DFMO"))
+ggplot(skiTum, aes(time, id, height = 2, width = 25)) +
+    geom_tile(aes(fill = count)) + theme_bw() +
+    facet_grid(dfmo ~ ., scales = "free_y") +
+    scale_fill_gradient(low = "grey", high = "black") + labs(fill="Count") +
+    scale_x_continuous(breaks = seq(0, 1800, 100)) + xlab("Time in days")
 }
 \seealso{
 \code{skinTumor}

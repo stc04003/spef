@@ -30,7 +30,7 @@ globalVariables(c("ID", "time2"))
 #' indicating number of counts since last observation time.
 #'
 #' @seealso \code{\link{panelReg}}
-#' @examples inst/examples/ex_PanelSurv.R
+#' @example inst/examples/ex_PanelSurv.R
 NULL
 
 #' @rdname PanelSurv

@@ -17,7 +17,14 @@ Plot the estimated baseline mean function. If \code{"se"} option of
   interval is also plotted.
 }
 \examples{
-inst/examples/ex_plotPanelReg.R
+data(blaTum)
+## Plot the fit of bladder tumor data set
+fm <- PanelSurv(id, time, count) ~ num + size + treatment
+fit1 <- panelReg(fm, data=blaTum, method = "AEE", se = "Sandwich")
+plot(fit1)
+
+fit2 <- panelReg(fm, data=blaTum, method = "MLs", se = "NULL")
+plot(fit2)
 }
 \seealso{
 \code{\link{panelReg}} \code{\link{panelReg.object}}

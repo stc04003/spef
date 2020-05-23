@@ -4,22 +4,18 @@
 ##############################################################################
 ispline <- function(x, bspBasis) {
     n <- length(x)
-
     # B-Spline matrix, n * (bspBasis$df + 1)
     bspMat <- do.call("bs", c(list(x=x), bspBasis))
-
     breaks <- c(bspBasis$Boundary.knots[1], bspBasis$knots,
                 bspBasis$Boundary.knots[2])
     idx <- c(cut(x, breaks, include.lowest=TRUE, right=FALSE)) + 3
     sqMat <- t(apply(matrix(idx), 1, function(u) seq(u, u - 3)))
-
     # I-Spline matrix
     ispMat <- matrix(0, n, bspBasis$df + 1)
     for (i in 1:n) {
         ispMat[i, seq(1, idx[i] - 4)] <- 1
         ispMat[i, sqMat[i, ]] <- cumsum(bspMat[i, sqMat[i, ]])
     }
-
     ispMat[, -1]
 }
 
@@ -30,7 +26,6 @@ isplineFun <- function(coef, bspBasis) {
     f <- function(x) {
         c(ispline(x, bspBasis) %*% coef)
     }
-
     attr(f, "coef") <- coef
     attr(f, "df") <- bspBasis$df
     attr(f, "knots") <- bspBasis$knots

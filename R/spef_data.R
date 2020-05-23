@@ -36,7 +36,7 @@
 #'   version \code{blaTum}.
 #'
 #' @seealso \code{\link{blaTum}}
-#' @examples inst/examples/ex_bladTumor.R
+#' @example inst/examples/ex_bladTumor.R
 NULL
 
 #' Bladder Tumors Cancer Recurrences
@@ -77,7 +77,7 @@ NULL
 #' @usage data(blaTum)
 #' 
 #' @seealso \code{\link{bladTumor}}
-#' @examples inst/examples/ex_blaTum.R
+#' @example inst/examples/ex_blaTum.R
 NULL
 
 #' Skin cancer chemoprevention trial
@@ -113,7 +113,7 @@ NULL
 #' @usage data(skinTumor)
 #' @seealso \code{skiTum}
 #' 
-#' @examples inst/examples/ex_skinTumor.R
+#' @example inst/examples/ex_skinTumor.R
 NULL
 
 #' A Simulated Data Mimicking a Skin Cancer Chemoprevention Trial
@@ -140,5 +140,5 @@ NULL
 #' @usage data(skiTum)
 #' @seealso \code{skinTumor}
 #' 
-#' @examples inst/examples/ex_skiTum.R
+#' @example inst/examples/ex_skiTum.R
 NULL

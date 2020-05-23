@@ -94,7 +94,7 @@ setMethod("doPanelFitPlot",
 #'
 #' @seealso \code{\link{panelReg}} \code{\link{panelReg.object}}
 #' @export
-#' @examples inst/examples/ex_plotPanelReg.R
+#' @example inst/examples/ex_plotPanelReg.R
 plot.panelReg <- function(x, ...) {
     doPanelFitPlot(baseline = x$baseline, timeGrid = x$timeGrid,
                    baselineSE = x$baselineSE, baselineMat = x$baselineMat,
