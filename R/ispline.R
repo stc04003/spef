@@ -8,7 +8,7 @@ ispline <- function(x, bspBasis) {
     bspMat <- do.call("bs", c(list(x=x), bspBasis))
     breaks <- c(bspBasis$Boundary.knots[1], bspBasis$knots,
                 bspBasis$Boundary.knots[2])
-    idx <- c(cut(x, breaks, include.lowest=TRUE, right=FALSE)) + 3
+    idx <- as.numeric(cut(x, breaks, include.lowest=TRUE, right=FALSE)) + 3
     sqMat <- t(apply(matrix(idx), 1, function(u) seq(u, u - 3)))
     # I-Spline matrix
     ispMat <- matrix(0, n, bspBasis$df + 1)
